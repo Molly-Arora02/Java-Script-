@@ -1,0 +1,11 @@
+let num ;
+console.log(num) // undefined
+console.log(typeof num) // undefined
+
+let str = null;
+console.log(str) // null
+console.log(typeof str) // object
+
+num = null;
+console.log(num) // null
+console.log(typeof num) // object
