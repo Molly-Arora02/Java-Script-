@@ -1,0 +1,53 @@
+// comparison operators 
+// comparison operators are used to compare two values and return a boolean value based on the result of the comparison.
+// the comparison operators include:
+// 1. equal (==)
+// 2. strictly equal (===)
+// 3. not equal (!=)
+// 4. strictly not equal (!==)
+// 5. greater than (>)
+// 6. less than (<)
+// 7. greater than or equal (>=)
+// 8. less than or equal (<=)
+// examples of comparison operators
+let x = 10;
+let y = 20;
+
+console.log(x == y); // false (x is not equal to y)
+console.log(x === y); // false (x is not strictly equal to y)
+console.log(x != y); // true (x is not equal to y)
+console.log(x !== y); // true (x is not strictly equal to y)
+console.log(x > y); // false (x is not greater than y)
+console.log(x < y); // true (x is less than y)
+console.log(x >= y); // false (x is not greater than or equal to y)
+console.log(x <= y); // true (x is less than or equal to y)
+
+// if statements with comparison operators
+if (x < y) {
+  console.log("x is less than y");
+} else {
+  console.log("x is not less than y");
+}
+
+if (x === 10) {
+  console.log("x is strictly equal to 10");
+} else {
+  console.log("x is not strictly equal to 10");
+}
+
+// club example with comparison operators
+let age = 24;
+let hasID = true;
+
+if (age >= 18 && hasID) {
+  console.log("Welcome to the club!");
+} else {
+  console.log("Sorry, you cannot enter the club.");
+}
+// article on mdn https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+// typecasting in comparison operators
+let num = 10;
+let str = "10";
+
+console.log(num == str); // true (type coercion occurs, str is converted to a number)
+console.log(num === str); // false (no type coercion, different types)
