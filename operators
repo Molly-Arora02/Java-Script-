@@ -1,0 +1,63 @@
+//operators 
+//logical operators
+//logical operators are used to combine two or more conditions and return a boolean value based on the result of the combined conditions. 
+//logical operators include: 
+//1. AND (&&) - returns true if both conditions are true, otherwise returns false. 
+//2. OR (||) - returns true if at least one condition is true, otherwise returns false. 
+//3. NOT (!) - returns true if the condition is false, and false if the condition is true.
+
+// examples of logical operators
+let a = 10;
+let b = 20;
+let c = 30;
+
+console.log(a < b && b < c); // true (both conditions are true)
+console.log(a > b || b < c); // true (at least one condition is true)
+console.log(!(a < b)); // false (the condition is true, so NOT returns false)
+
+// if statements with logical operators
+if (a < b && b < c) {
+  console.log("a is less than b and b is less than c");
+} else {
+  console.log("Either a is not less than b or b is not less than c");
+}
+
+if (a > b || b < c) {
+  console.log("Either a is greater than b or b is less than c");
+} else {
+  console.log("Neither a is greater than b nor b is less than c");
+}
+
+if (!(a < b)) {
+  console.log("a is not less than b");
+} else {
+  console.log("a is less than b");
+}
+
+// club example 
+
+let age = 24;
+let hasID = !true;
+
+if (age >= 18 && hasID) {
+  console.log("Welcome to the club!");
+} else {
+  console.log("Sorry, you cannot enter the club.");
+}
+console.log(typeof (age >= 18 && hasID)); // boolean
+
+
+// club else if 
+
+if (age < 18){
+  alert("Sorry, you cannot enter the club.");
+}
+else if (age >= 18 && age <25){
+  alert("Welcome to the club! You are in the youth section.");
+}
+else if (age >= 25 && age < 60){
+  alert("Welcome to the club! You are in the adult section.");
+}
+else {
+  alert("Welcome to the club! You are in the senior section.");
+}
