@@ -1,0 +1,8 @@
+// sort() is an inbuilt function in JavaScript which is used to sort the elements of an array. The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code unit values.
+// lexicographical order is the default sort order, which means that the elements are sorted based on their string representation. For example, the number 10 comes before 2 in lexicographical order because the string "10" comes before "2" when compared character by character. To sort numbers in numerical order, a compare function can be provided to the sort() method. The compare function takes two arguments and returns a negative value if the first argument is less than the second, a positive value if the first argument is greater than the second, and zero if they are equal. This allows for custom sorting logic to be implemented.
+
+// sort compare function example
+const numbers = [10, 2, 5, 1, 9 , 11, 12 ,15 ];
+console.log(numbers);
+numbers.sort((a, b) => a - b);
+console.log(numbers); // Output: [1, 2, 5, 9, 10, 11, 12, 15] 
